@@ -18,8 +18,7 @@ class ThingDetailView(generic.DetailView):
 class ThingCreateView(generic.CreateView):
     model = Thing
     form_class = ThingForm
-    fields = ["name", "description"]
-    success_url = reverse_lazy("thing_list")
+    success_url = reverse_lazy("things:thing_list")
 
 
 class ThingUpdateView(ThingCreateView, generic.UpdateView):
@@ -28,4 +27,4 @@ class ThingUpdateView(ThingCreateView, generic.UpdateView):
 
 class ThingDeleteView(generic.DeleteView):
     model = Thing
-    success_url = reverse_lazy("thing_list")
+    success_url = reverse_lazy("things:thing_list")

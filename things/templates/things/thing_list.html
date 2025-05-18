@@ -9,7 +9,17 @@
 <ul class="list-group">
     {% for thing in object_list %}
     <li class="list-group-item">
-        <a href="{% url 'things:thing_detail' thing.pk %}">{{ thing.name }}</a>
+        <div class="d-flex justify-content-between">
+            <div>
+                <a href="{% url 'things:thing_detail' thing.pk %}" class="fw-bold d-block">
+                    {{ thing.name }}
+                </a>
+                <small class="text-muted">{{ thing.description }}</small>
+            </div>
+            <div class="text-end align-self-end">
+                <small class="text-muted">{{ thing.created_at }}</small>
+            </div>
+        </div>
     </li>
     {% empty %}
     <li class="list-group-item">No things yet.</li>

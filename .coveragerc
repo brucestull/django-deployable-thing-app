@@ -1,0 +1,18 @@
+[run]
+omit =
+    manage.py
+    */wsgi.py
+    */asgi.py
+    */migrations/*
+    */tests/*
+    */__init__.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    def __str__
+    def __repr__
+
+[html]
+directory = htmlcov

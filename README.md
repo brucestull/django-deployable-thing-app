@@ -6,5 +6,18 @@ Deployable Django Thing App.
 
 ## Commands
 
+### Django
+
 - `python manage.py loaddata sample_things
 
+### Coverage
+
+- `coverage erase`
+- `coverage run manage.py test`
+- `coverage report -m`
+- `coverage html`
+
+## Links
+
+- [http://localhost:8000/](http://localhost:8000/)
+- [http://localhost:8000/things/](http://localhost:8000/things/)

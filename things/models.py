@@ -1,5 +1,6 @@
 # things/models.py
 
+from django.urls import reverse
 from django.db import models
 
 
@@ -10,6 +11,10 @@ class Thing(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+
+        return reverse("things:thing_detail", args=[str(self.id)])
 
     class Meta:
         verbose_name = "Thing"
