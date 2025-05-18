@@ -1,0 +1,14 @@
+{% extends "things/base.html" %}
+
+{% block title %}{{ object.name }}{% endblock %}
+
+{% block content %}
+<h1>{{ object.name }}</h1>
+
+<p>{{ object.description }}</p>
+<p><small class="text-muted">Created at: {{ object.created_at }}</small></p>
+
+<a class="btn btn-warning" href="{% url 'things:thing_update' object.pk %}">Edit</a>
+<a class="btn btn-danger" href="{% url 'things:thing_delete' object.pk %}">Delete</a>
+<a class="btn btn-secondary" href="{% url 'things:thing_list' %}">Back to List</a>
+{% endblock %}

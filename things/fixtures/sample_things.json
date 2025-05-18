@@ -1,0 +1,56 @@
+[
+    {
+        "model": "things.thing",
+        "pk": 1,
+        "fields": {
+            "name": "Thing One",
+            "description": "This is the first thing.",
+            "created_at": "2025-05-16T10:00:00Z"
+        }
+    },
+    {
+        "model": "things.thing",
+        "pk": 2,
+        "fields": {
+            "name": "Thing Two",
+            "description": "This is the second thing.",
+            "created_at": "2025-05-16T11:00:00Z"
+        }
+    },
+    {
+        "model": "things.thing",
+        "pk": 3,
+        "fields": {
+            "name": "Thing Three",
+            "description": "This is the third thing.",
+            "created_at": "2025-05-16T12:00:00Z"
+        }
+    },
+    {
+        "model": "things.thing",
+        "pk": 4,
+        "fields": {
+            "name": "Thing Four",
+            "description": "This is the fourth thing.",
+            "created_at": "2025-05-16T13:00:00Z"
+        }
+    },
+    {
+        "model": "things.thing",
+        "pk": 5,
+        "fields": {
+            "name": "Thing Five",
+            "description": "This is the fifth thing.",
+            "created_at": "2025-05-16T14:00:00Z"
+        }
+    },
+    {
+        "model": "things.thing",
+        "pk": 6,
+        "fields": {
+            "name": "Thing Six",
+            "description": "This is the sixth thing.",
+            "created_at": "2025-05-16T15:00:00Z"
+        }
+    }
+]

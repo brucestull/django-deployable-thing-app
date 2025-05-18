@@ -1,0 +1,15 @@
+{% extends "things/base.html" %}
+
+{% block title %}Delete Thing{% endblock %}
+
+{% block content %}
+<h1>Delete Thing</h1>
+
+<p>Are you sure you want to delete "<strong>{{ object }}</strong>"?</p>
+
+<form method="post">
+  {% csrf_token %}
+  <button class="btn btn-danger" type="submit">Confirm Delete</button>
+  <a class="btn btn-secondary" href="{% url 'things:thing_list' %}">Cancel</a>
+</form>
+{% endblock %}
