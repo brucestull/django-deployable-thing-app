@@ -15,8 +15,13 @@ loaddata:
 	python manage.py loaddata sample_things
 	echo "Sample data loaded."
 
-createsu:
+checkenv:
+	@test -f .env || (echo ".env file not found. Please copy .env.example to .env and update it."; exit 1)
+
+createsu: checkenv
 	@python manage.py shell -c "import os; \
+from dotenv import load_dotenv; \
+load_dotenv(); \
 from django.contrib.auth import get_user_model; \
 User = get_user_model(); \
 username = os.environ.get('DJANGO_SU_NAME'); \
