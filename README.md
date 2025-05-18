@@ -6,6 +6,13 @@ Deployable Django Thing App.
 
 ## Commands
 
+### Make
+
+- `make resetdb`
+- `make migrate`
+- `make loaddata`
+- `make setup`
+
 ### Django
 
 - `python manage.py loaddata sample_things
