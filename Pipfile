@@ -9,6 +9,7 @@ docutils = "*"
 isort = "*"
 flake8 = "*"
 pipenv = "*"
+coverage = "*"
 
 [dev-packages]
 
